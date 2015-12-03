@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="high_chart.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Highcharts</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="dashboard.js"></script>
+   <script type="text/javascript" src="dashboard_time.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+  <script src="themes/dark-unica.js"></script>
+    <style>
+        .div1 {
+            background-color: #352929;
+            width: 100%; height: 120px; margin: 0 auto;
+            }
+    </style>
+</head>
+<body>
+  <div class="div1"><font color="white"><h1 align="center"><img src="logo.png" alt="AMAZE" width="150" height="60" align="center" ></h1>
+    <div>
+    <form>
+      Choose the duration:
+      <select name="time" id="time">
+        <option value="1800">last 0.5 hour</option>
+        <option value="3600">last 1 hour</option>
+        <option value="5400">last 1.5 hours</option>
+         <option value="7200">last 2 hours</option>
+      </select>
+      <input type="submit" value="submit" onclick="return fetch();"/>
+      </form>
+        <!--<h6 align="right">
+        <a href="home.html"><span class="glyphicon glyphicon-log-out"></span> LogOut</a>
+       </h6>-->
+    </div>
+       
+  </font></div>
+   <br>
+  <div id="container3" class="container" style="min-width: 442px; height: 300px; margin: 0 auto"></div>
+  <div id="container1" class="container" style="min-width: 442px; height: 300px; margin: 0 auto"></div>
+  <div id="container2" class="container" style="min-width: 443px; height: 300px; margin: 0 auto"></div>
+  <div id="container4" class="container" style="min-width: 443px; height: 300px; margin: 0 auto"></div>
+  <div id="container5" class="container" style="min-width: 443px; height: 300px; margin: 0 auto"></div>
+  <div id="container6" class="container" style="min-width: 443px; height: 300px; margin: 0 auto"></div>
+  <div id="containerWRO" class="container" style="min-width: 443px; height: 300px; margin: 0 auto"></div>
+  <div id="containerWRB" class="container" style="min-width: 443px; height: 300px; margin: 0 auto"></div>
+  <div id="containerMEA" class="container" style="min-width: 443px; height: 300px; margin: 0 auto"></div>
+  <div id="containerMEU" class="container" style="min-width: 443px; height: 300px; margin: 0 auto"></div>
+  <div id="container7" class="container" style="min-width: 443px; height: 300px; margin: 0 auto"></div>
+  <div id="container8" class="container" style="min-width: 443px; height: 300px; margin: 0 auto"></div>
+ </body>
+</html>
